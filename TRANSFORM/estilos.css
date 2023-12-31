@@ -16,8 +16,6 @@
     --color-secundary: #ffb633;
 }
 
-/*BOTON PORTAFOLIO*/
-
 .cta__portafolio{
     position: absolute;
     top: 10px;
@@ -109,14 +107,10 @@ body .container__flex{
     row-gap: 5px;
 }
 
-/*TAMAÑO DE LOS ICONOS*/
-
 .container__img{
     width: 70%;
     height: 70%;
 }
-
-/*HOVER DE ICON*/
 
 .container__icon:hover{
     background-color: var(--color-fondouno);
@@ -156,8 +150,6 @@ body .container__flex{
     transform: scale(1) translateY(50px);
     opacity: 1;
 }
-
-/* COLORES DE LOS CONTENEDORES */
 
 .item__flex--1{
     background-color: var(--color-uno);

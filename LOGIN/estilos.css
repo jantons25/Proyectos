@@ -146,8 +146,8 @@ body{
 }
 
 input[type="checkbox"]{
-    appearance: none; /* Restablece la apariencia predeterminada del checkbox */
-    -webkit-appearance: none; /* Para navegadores basados en WebKit (Chrome, Safari, etc.) */
+    appearance: none; 
+    -webkit-appearance: none; 
     width: 15px;
     height: 15px;
     background-color: white;
