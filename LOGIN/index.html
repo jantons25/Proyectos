@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/svg" href="./assets/bxs-user.svg">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a class="body__cta-portafolio" href="../index.html">Portafolio</a>
+    <section class="container">
+        <figure class="container__figure">
+            <img src="./assets/bxs-user.svg" alt="imagen_usuario" class="container__img">
+        </figure>
+        <form action="" class="container__form">
+            <div class="form__item">
+                <figure class="form__figure">
+                    <img src="./assets/bx-user.svg" alt="imagen_usuario" class="form__img">
+                </figure>
+                <input type="text" class="form__input" required placeholder="&nbsp;&nbsp;Usuario">
+            </div>
+            <div class="form__item">
+                <figure class="form__figure">
+                    <img src="./assets/bxs-lock.svg" alt="imagen_password" class="form__img">
+                </figure>
+                <input type="password" class="form__input" required placeholder="&nbsp;&nbsp;Contraseña">
+            </div>
+            <div class="form__item--texts">
+                <label for="checkbox" class="checkbox__label">
+                    <input type="checkbox" class="form__item--texts--checkbox" id="checkbox">&nbsp;&nbsp;Recordarme</label>
+                </label>
+                <a href="#" class="form__item---texts--cta">¿Olvidaste tu contraseña?</a>
+            </div>
+            <input type="submit" class="form__cta" value="Ingresar">
+        </form>
+    </section>
+</body>
+</html>
