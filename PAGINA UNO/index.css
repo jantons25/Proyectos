@@ -1,0 +1,367 @@
+*{
+    box-sizing: border-box; 
+}
+
+html{
+    scroll-behavior: smooth; /*MOVIMIENTO DE DESPLAZAMIENTO*/
+}
+
+body{
+    margin:0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+.color-acento{color: #008F8C;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5); /*SOMBRAS X Y EXPANSION 0.5 TRANSPARENCIA*/
+    color: white; /*FUENTE*/
+    background-color: #008F8C; /*COLOR DE FONDO*/
+}
+
+button:hover{
+    background-color: rgb(96, 9, 176);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px; /*ARRIBA ABAJO - COSTADOS*/
+    font-weight: bold;
+    color: black;
+    font-size: 2em;
+}
+
+header .container{
+    display: flex; /*CENTRADO*/
+    flex-direction: column; /*SE ORDENE EN UNA COLUMNDA*/
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+header a:hover{
+    color: #008F8C;
+}
+
+#uno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;   /*90% DE LA PANTALLA VARIADA*/
+    color: white;
+    background-image: linear-gradient( /*SOMBRA*/
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("IMG/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /*OCUPE TODO EL ESPACIO DISPONIBLE*/
+    background-position: center center; /*SIEMPRE CENTRADA*/
+}
+
+#uno h1{
+    color: white;
+    font-size: 2.5em;
+}
+
+#uno button{
+    font-size: 1.75em;
+}
+
+#dos .container{
+    text-align: center;
+    padding: 80px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#dos h2{
+    margin: 0;
+}
+
+#dos p{
+    padding-top: 15px;
+}
+
+#dos .img-dos{
+    background-image: url("IMG/img4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid rgb(100, 100, 100);
+}
+
+#tres{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#tres h2{
+    margin-top: 0;
+}
+
+#tres .container{
+    padding: 50px 12px;
+}
+
+#tres .p{
+    display: none;
+}
+
+#tres h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#tres .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+#tres .boton-tres{
+    padding-top: 15px;
+}
+
+#tres a{
+    text-decoration: none;
+    color: white;
+}
+
+.carta:first-child{
+    background-image: linear-gradient( /*SOMBRA*/
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("IMG/img2.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient( /*SOMBRA*/
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("IMG/img3.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient( /*SOMBRA*/
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url("IMG/img1.jpg");
+}
+
+#cuatro .container{
+    text-align: center;
+    padding: 200px 12px;
+    height: 100vh;
+}
+
+#cuatro li{
+    margin: 30px 0px;
+    font-weight: bold;
+}
+
+#cinco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#cinco button{
+    font-size: 5em;
+}
+
+#cinco h2{
+    font-size: 9vw;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /*MEDIO ABAJO*/
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+    padding: 12px;
+}
+
+@media (min-width: 850px){
+
+    header{
+        position: fixed; /*SE QUEDE EN SU LUGAR*/    
+        width: 100%;  /*MANTENGA SU ANCHO*/
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between; /*SEPARAR ELEMENTOS*/
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #uno{
+        height: 90vh;   /*90% DE LA PANTALLA VARIADA*/
+    }
+
+    #uno h1{
+        font-size: 5em;
+    }
+
+    #dos .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; /*ESPACIOS IGUALES ENTRE LOS ELEMENTOS*/
+    }
+
+    #dos .text{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #dos .img-dos{
+        background-image:url("IMG/img4.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 450px;
+        width: 335px;
+        border-radius: 10%;
+        border: 1px solid rgba(0,0,0,0.5);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    #dos h2{
+        margin-top: 0px;
+    }
+
+    #tres .cartas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #tres p{
+        display: block; 
+        margin-bottom: 30px;
+    }
+
+    #tres .carta{
+        padding: 50px;
+    }
+
+    #tres h3{
+        margin-top: 0;
+    }
+
+    #tres h2{
+        font-size: 4em;
+    }
+
+    #cuatro .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #cuatro .img-cuatro{
+        background-image:url("IMG/img2.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 450px;
+        width: 335px;
+        border-radius: 10%;
+        border: 1px solid rgba(0,0,0,0.5);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    #cuatro ul{
+        padding: 0;
+    }
+
+    #cinco h2{
+        font-size: 5em;
+    }
+
+    #cinco button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
+
+
+@media (min-width: 1200px){
+    #cuatro{
+        background-position-x: calc(100vw - 800px);
+    }
+}

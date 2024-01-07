@@ -82,12 +82,14 @@ body{
     margin-top: 10px;
     font-size: 1.3rem;
     letter-spacing: .5rem;
-    color: rgb(162, 161, 161);
+    color: #a2a1a1;
     max-width: 450px;
 }
 
 .header-article__section .section-p{
     letter-spacing: normal;
+    max-width: 400px;
+    font-size: 1.7rem;
 }
 
 .header-article__section h1{
@@ -99,9 +101,9 @@ body{
 .header-article__section h2{
     margin-top: 10px;
     color: #a2a1a1;
-    color: rgb(162, 161, 161);
     width: 100%;
     margin-bottom: 0;
+    font-size: 2rem;
 }
 
 .header-article__section__div{
@@ -132,7 +134,7 @@ body{
 }
 
 .header__aside{
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -171,14 +173,26 @@ body{
 }
 
 .main-proyectos__section{
-    width: 80%;
-    max-width: 260px;
-    height: 80%;
+    width: 350px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     position: relative;
-    height: 200px;
+    height: 450px;
+}
+
+.proyectos__tecnologias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 10px;
+    margin-top: 20px;
+}
+
+.skil__figure--item{
+    width: 40px;
+    height: 40px;
 }
 
 .face{
@@ -191,40 +205,8 @@ body{
     transition: .9s;
 }
 
-.face--uno{
-    background-color: var(--color-secundary);
-}
-
-.face--dos{
-    background-color: #98D8AA;
-}
-
-.face--tres{
-    background-color: #265073;
-}
-
 .face--cuatro{
-    background-color: #B31312;
-}
-
-.face--cinco{
-    background-color: #FBECB2;
-}
-
-.face--seis{
-    background-color: #528ca1;
-}
-
-.face--siete{
-    background-color: #00653e;
-}
-
-.face--ocho{
-    background-color: #E48F45;
-}
-
-.face--nueve{
-    background-color: #B15EFF;
+    background-color: #10182e;
 }
 
 .face a{
@@ -241,40 +223,8 @@ body{
     background-size: cover;
 }
 
-.back--item1{
-    background-image: linear-gradient(rgba(255, 0, 0, 0.416),rgba(0, 0, 255, 0.537)), url('./img/img_fondo.webp');
-}
-
-.back--item2{
-    background-image: linear-gradient(rgba(240,89,65, 0.416),rgba(34,9,44, 0.537)), url('./img/img_fondo2.webp');
-}
-
-.back--item3{
-    background-image: linear-gradient(rgba(255,245,194, 0.416),rgba(48,129,208, 0.537)), url('./img/img_fondo3.webp');
-}
-
 .back--item4{
-    background-image: linear-gradient(rgba(61,48,162, 0.416),rgba(255,251,115, 0.537)), url('./img/img_fondo4.webp');
-}
-
-.back--item5{
-    background-image: linear-gradient(rgba(58,77,57, 0.416),rgba(236, 227, 206, 0.537)), url('./img/img_fondo5.webp');
-}
-
-.back--item6{
-    background-image: linear-gradient(rgba(255, 0, 0, 0.416),rgba(0, 0, 255, 0.537)), url(./CARTAS-POKEMON/assets/fondo.webp);
-}
-
-.back--item7{
-    background-image: linear-gradient(rgba(255, 0, 0, 0.416),rgba(5, 105, 14, 0.877)), url('./img/img_fondo7.webp');
-}
-
-.back--item8{
-    background-image: linear-gradient(rgba(255, 255, 0, 0.289),rgba(105, 5, 38, 0.877)), url('../REPRODUCTOR/assets/imagen.webp');
-}
-
-.back--item9{
-    background-image: linear-gradient(rgba(167, 98, 245, 0.289),rgba(245, 66, 126, 0.877)), url('./img/transicion.png');
+    background-image: linear-gradient(rgba(61,48,162, 0.416),rgba(255,251,115, 0.537));
 }
 
 .booton{
@@ -308,8 +258,16 @@ body{
 }
 
 .front p{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    color: #a2a1a1;
 }
+
+.front h2{
+    margin-top: 10px;
+    font-size: 1.8rem;
+    color: white;
+}
+
 
 .main-proyectos__section:hover .front{
     transform: perspective(600px) rotateY(180deg);
@@ -321,8 +279,8 @@ body{
 }
 
 .main-proyectos__section__figure{
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: 160px;
 }
 
 .main-proyectos__section__img{
@@ -344,6 +302,111 @@ body{
     width: 80%;
     display: block;
     text-align: center;
+}
+
+.main__my{
+    width: 100%;
+    background-color: var(--color-primary);
+    padding-bottom: 40px;
+}
+
+.my__container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.my__texts{
+    order: 2;
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+.my__texts p{
+    margin-bottom: 10px;
+}
+
+.my__texts h2{
+    margin-bottom: 20px;
+    text-align: start;
+    text-align: center;
+}
+
+.my__foto{
+    display: flex;
+    justify-content: center;
+}
+
+.my_figure{
+    width: 200px;
+    height: 200px;
+}
+
+.my_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.main__skils{
+    width: 100%;
+    background-color: black;
+    padding-top: 20px;
+}
+
+.header-article__section__div{
+    display: none;
+}
+
+.main__skils h2{
+    color: var(--color-secundary);
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 30px 0px;
+}
+
+.skils{
+    padding-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 60px;
+    justify-content: center;
+    padding-bottom: 60px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.skil__item{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.skil__figure{
+    width: 60px;
+    height: 60px;
+}
+
+.skil__item p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.skil_img{
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (min-width: 786px){
@@ -429,7 +492,7 @@ body{
         font-size: 1.5rem;
     }
 
-    .header-article__section__div__uno h1{
+    .header-article_front h2_section__div__uno h1{
         font-size: 5rem;
     }
 
@@ -442,6 +505,27 @@ body{
         margin-top: 40px;
         margin-left: auto;
     }
+
+    .main__my{
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .my__container{
+        width: 70%;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .my_figure{
+        width: 300px;
+        height: 300px;
+    }
+
+    .my__texts p{
+        text-align: start;
+    }
+    
 }
 
 @media screen and (min-width: 1366px){
@@ -455,28 +539,23 @@ body{
         letter-spacing: 2px;
     }
 
-    .header-article__section__div__uno p{
-        letter-spacing: 10px;
+    .header-article__section__div__uno .section-p{
+        font-size: 2.3rem;
     }
 
     .header-article__section__div__uno h2{
-        font-size: 1.8rem;
-        width: 400px;
+        font-size: 3rem;
+        width: 500px;
+    }
+
+    .header-article__section__div__uno h1{
+        font-size: 5rem;
     }
 
     .header-article__section__div__button{
         width: 150px;
         height: 40px;
         font-size: 1.8rem;
-    }
-
-    .main-proyectos__section{
-        height: 260px;
-    }
-
-    .main-proyectos__section__figure{
-        width: 100px;
-        height: 100px;
     }
 
     .front p{
@@ -493,4 +572,19 @@ body{
         font-size: 1.8rem;
     }
 
+    .my__container{
+        width: 60%;
+    }
+
+    .my_figure{
+        width: 400px;
+        height: 400px;
+    }
+
+}
+
+@media (min-width: 1500px){
+    .main-proyectos{
+        width: 80%;
+    }
 }
